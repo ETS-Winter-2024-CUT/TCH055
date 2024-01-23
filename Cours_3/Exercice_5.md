@@ -1,17 +1,6 @@
-# Exercice 5
+# [Exercice 5](Exercice_4.md#création-de-la-vue)
 
 1. En utilisant la vue "Sorties_Produits", trouver le nombre de sorties dont le coût total excède 200$.
-    ```sql
-    CREATE VIEW Sorties_Produits
-    AS
-    SELECT P.code, P.description, P.classe, P.cout * S.quantite as cout_total, C.taxable
-    FROM Sorties S
-    INNER JOIN Produits P on S.code_produit = P.code
-    INNER JOIN Classes C on P.classe = C.classe;
-    ```
-
-    Puis
-
     ```sql
     SELECT COUNT(*)
     FROM Sorties_Produits SP
