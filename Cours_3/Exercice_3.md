@@ -1,6 +1,6 @@
 # Exercice 3
 
-1. En vous basant sur le diagramme de Venn, écrivez larequêtepermettant d’afficher les produits n’ayant pas de Classe associée.
+1. En se basant sur le diagramme de Venn, écrire la requête permettant d’afficher les produits n’ayant pas de Classe associée.
 
     ```sql
     SELECT *
@@ -9,6 +9,6 @@
     WHERE P.classe IS NULL;
     ```
 
-2. Expliquez pourquoi ceci n’aurait, de toute façon, pas pu donner de résultats.
+2. Explication de pourquoi ceci n’aurait, pas pu donner de résultats.
 
     Le champ "classe" de la table Produits est non-Null-able, il a donc toujours une valeur.
